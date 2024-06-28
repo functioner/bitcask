@@ -26,10 +26,14 @@ client:
 ./bin/run.sh --client
 ```
 
-Note that the client is just an example.
+Note that the client is just an example (random read or write).
 You can easily modify the code and implement your own client.
 
 ## Design
+
+The `bitcask` folder contains the implementation of the KV store.
+The `app` folder contains applications using the bitcask library.
+When `value` is null, then `put(key, value)` means delete the key.
 
 There are 4 main components in this bitcask implementation.
 1. network service: based on Java JMI. Code files: `KVStoreStub.java` and `KVStoreRemote.java`

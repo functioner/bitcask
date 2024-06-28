@@ -28,6 +28,7 @@ client:
 
 Note that the client is just an example (random read or write).
 You can easily modify the code and implement your own client.
+Multiple clients can work at the same time.
 
 ## Design
 

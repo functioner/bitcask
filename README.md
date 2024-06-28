@@ -14,7 +14,7 @@ mvn clean package -DskipTests
 To run the package:
 server (blocking in the terminal):
 ```
-./bin/run.sh --server ./datadir
+./bin/run.sh --server --path ./datadir
 ```
 
 Note that `datadir` is just an example. You can use your own path name.
